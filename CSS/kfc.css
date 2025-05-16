@@ -1,0 +1,369 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+nav {
+  position: fixed;
+  width: 100%; ;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: rgba(0, 0, 0, 0.7);
+    padding:2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.85);
+   
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(231, 156, 8);
+    gap: 10px; 
+  }
+  
+  #homelogo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .signup-link {
+    display: flex;
+    align-items: center;
+    
+  }
+  .signup-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(231, 142, 8);
+    margin-right: 10px;
+    
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+
+#KFC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#970505;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    padding: 2px;
+    margin-top: 82px;
+  
+   
+}
+
+.KFC{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 25px;
+
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around; /* Center items horizontally */
+  align-items: stretch;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+}
+
+
+.images {
+  flex: 0 0 18%; /* Do not grow or shrink, fixed width */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+  height: 350px;
+}
+
+
+.image-container {
+    flex-grow: 1;
+    overflow: hidden;
+    
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+.images img {
+    width: 100%; /* Ensure the image fills the container width */
+    height: 70%; /* Limit the image height so the caption area is consistent */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+figcaption {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #970505;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 50%; /* Ensure the caption takes up the remaining height */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px; /* or any fixed value you want */
+    overflow: auto;
+  }
+
+
+figcaption h3 {
+    margin: 0;
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+figcaption p {
+    color: white;
+    font-size: 14px;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .images {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .add-to-cart{
+    background-color: rgb(231, 142, 8);
+    border:none;
+    border-radius: 12px;
+    
+  }
+
+  .add-to-cart:hover{
+    background-color: #e7e4e4;
+  }
+
+  figcaption button{
+    height: 30px;
+    width: 50%;
+    align-self: center;
+  }
+  
+/* Centering the dropdown container 
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center horizontally */
+  /*justify-content: center; /* center vertically */
+  /*height: 100vh; /* full height of the viewport */
+
+
+
+
+/* Optional: style the label */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color:rgb(231, 142, 8)
+}
+
+/* styles.css */
+
+
+
+
+
+/* 🛒 Cart Icon */
+.cart-icon{
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  margin-right: 5px;
+  color: #970505;
+  
+}
+
+/* 🧺 Cart Panel */
+#cartPage {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 320px;
+  max-height: 450px;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  padding: 15px;
+  z-index: 999;
+}
+
+#cartPage h3 {
+  margin-top: 0;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+
+.cart-icon {
+  position: relative; /* For positioning the dropdown */
+  display: inline-block;
+  cursor: pointer; /* Add a pointer for better UX */
+}
+
+.cart-dropdown {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position below the icon */
+  right: 0; /* Align to the right */
+  background-color: #f9f9f9;
+  min-width: 200px; /* Adjust as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* Sit above other elements */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cart-dropdown h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cart-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.cart-dropdown ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-dropdown ul li:last-child {
+  border-bottom: none;
+}
+
+.cart-dropdown p#emptyCartMessage {
+  font-style: italic;
+  color: #777;
+}
+
+.cart-dropdown button {
+  /* Basic button styling - customize as needed */
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-dropdown button:hover {
+  background-color: #0056b3;
+}
+
+
+.dropdown {
+  margin: 10px 0;
+}
+
+.dropdown-toggle {
+  width: 90%;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+.dropdown-content label {
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+  font-size: 12px;
+}
+
+
+
+
+ 
+
+
+
+
+ 

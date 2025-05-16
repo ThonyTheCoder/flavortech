@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="CSS/kfc.css" />
+  <title>KFC Menu</title>
+</head>
+
+<body>
+  <!-- Background Image -->
+  <img src="Images/additional-media/food-bg%20signup.png" class="background-image">
+  <nav>
+    <div class="logo">
+      <img src="Images/additional-media/logo.png" id="homelogo" alt="Logo" />
+      <span>FlavorTech</span>
+    </div>
+    <div class="signup-link">
+      <a href="signup.html">Sign Up/</a>
+      <a href="login.html">Login</a>
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒(<span id="cartCount">0</span>)
+        <div id="cartDropdown" class="cart-dropdown">
+          <h3>Your Cart</h3>
+          <ul id="cartItems">
+          </ul>
+          <p id="emptyCartMessage">Your cart is empty.</p>
+          <button onclick="checkout()">Checkout</button> </div>
+      </div>
+    </div>
+   
+  </nav>
+  
+
+  <div id="KFC">
+    <h1>KFC Menu </h1>
+  </div>
+
+  <div class="KFC">
+    <h1>BIG BOX</h1>
+  </div> 
+  <div><hr></div>
+  
+  
+
+
+  <div class="slider">
+    <figure class="images">
+      <div class="image-container">
+        <img src="Images/additional-media/KFC%20image/Big%20Box/BBQ%20Popcaan%20Chicken%20Big%20Box.png" alt="BBQ Popcaan Chicken Big Box" />
+      </div>
+      <figcaption data-price="1800" data-image="Images/KFC image/Big Box/BBQ Popcaan Chicken Big Box.png">
+        <h3>BBQ Popcaan Chicken Big Box</h3>
+        <div class="dropdown">
+          <button class="dropdown-toggle">Choose Your Sides</button>
+          <div class="dropdown-content">
+            <label><input type="checkbox" value="335" class="side-option"> Large Fries</label><br>
+            <label><input type="checkbox" value="130" class="side-option"> Biscuit</label><br>
+            <label><input type="checkbox" value="250" class="side-option"> Corn</label><br>
+            <label><input type="checkbox" value="255" class="side-option"> Coleslaw</label><br>
+            <label><input type="checkbox" value="215" class="side-option"> Mashed Potato</label><br>
+            <label><input type="checkbox" value="250" class="side-option"> Strawberry Biscuit</label><br>
+            <label><input type="checkbox" value="250" class="side-option"> Cherry Biscuit</label><br>
+            <label><input type="checkbox" value="250" class="side-option"> Pineapple Dessert</label>
+          </div>
+        </div>
+        <p>Price: $<span class="base-price">1800</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+      </figcaption>
+    </figure>
+
+
+    <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Big%20Box/Kripers%20Big%20Box.png" alt="Kripers Big Box" />
+        </div>
+        <figcaption>
+          <h3>Kripers Big Box</h3>
+
+      <!-- Custom Dropdown with Checkboxes -->
+  
+  <p>Price: $<span class="base-price">1800</span></p>
+         <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+    <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Big%20Box/Popcaan%20Chicken%20Big%20Box.png" alt="Popcaan Chicken Big Box" />
+        </div>
+        <figcaption>
+          <h3>Popcaan Chicken Big Box</h3>
+
+          <!-- Custom Dropdown with Checkboxes -->
+  
+  <p>Price: $<span class="base-price">1800</span></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+      <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Big%20Box/Spicy%20Popcaan%20Chicken%20Big%20Box.png" alt="Spicy Popcaan Chicken Big Box" />
+        </div>
+        <figcaption>
+          <h3>Spicy Popcaan Chicken Big Box</h3>
+
+        
+          <p>Price: $<span class="base-price">1800</span></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+      <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Big%20Box/Zinger%20Big%20Box.png" alt="Zinger Big Box" />
+        </div>
+        <figcaption>
+          <h3>Zinger Big Box</h3>
+
+       
+          <p>Price: $<span class="base-price">1800</span></p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+  </div>
+
+  <!--second menu-->
+  <div class="KFC">
+    <h1>Bucket</h1>
+  </div>
+  <div><hr></div>
+
+  <div class="slider">
+
+    <figure class="images">
+      <div class="image-container">
+        <img src="Images/additional-media/KFC%20image/Bucket/Family%209.png" alt="Family 9" />
+      </div>
+      <figcaption>
+        <h3>Family 9</h3>
+        <p>Price: $5,130</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </figcaption>
+    </figure>
+    
+
+    <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Bucket/Family%209.png" alt="Family 12"/>
+        </div>
+        <figcaption>
+          <h3>Family 12</h3>
+          <p>Price: $6,750</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+    <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Bucket/Family%2015.png" alt="Party 15" />
+        </div>
+        <figcaption>
+          <h3>Party 15</h3>
+          <p>Price: $6,540</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+      <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Bucket/Family%2021.png" alt="Party 21" />
+        </div>
+        <figcaption>
+          <h3>Party 21</h3>
+          <p>Price: $8,740</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+
+  </div>
+
+
+  <!--Third menu-->
+  <div class="KFC">
+    <h1>Chicken Combos</h1>
+  </div>
+  <div><hr></div>
+
+  <div class="slider">
+
+    <figure class="images">
+      <div class="image-container">
+        <img src="Images/additional-media/KFC%20image/Chicken%20Combos/Big%20Deal.png" alt="Big Deal" />
+      </div>
+      <figcaption>
+        <h3>Big Deal</h3>
+        <p>Price: $5,130</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </figcaption>
+    </figure>
+    
+
+    <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Chicken%20Combos/Big%20Six.png" alt="Big Six"/>
+        </div>
+        <figcaption>
+          <h3>Big Six</h3>
+          <p>Price: $6,750</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+      </figure>
+
+    <figure class="images">
+        <div class="image-container">
+          <img src="Images/additional-media/KFC%20image/Chicken%20Combos/Meal%20Deal.png" alt="Meal Deal" />
+        </div>
+        <figcaption>
+          <h3>Meal Deal</h3>
+          <p>Price: $6,540</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </figcaption>
+    </figure>
+  </div>
+
+
+ <!--Fourth menu-->
+ <div class="KFC">
+  <h1>Value Menu</h1>
+</div>
+<div><hr></div>
+
+<div class="slider">
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Value%20Menu/BBQ%20Famous%20Bowl%20Combo.png" alt="BBQ Famous Bowl Combo" />
+    </div>
+    <figcaption>
+      <h3>BBQ Famous Bowl Combo</h3>
+      <p>Price: $5,130</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+  
+
+  <figure class="images">
+      <div class="image-container">
+        <img src="Images/additional-media/KFC%20image/Value%20Menu/BBQ%20famous%20Bowl.png" alt="BBQ famous Bowl"/>
+      </div>
+      <figcaption>
+        <h3>BBQ famous Bowl</h3>
+        <p>Price: $6,750</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </figcaption>
+    </figure>
+
+    <figure class="images">
+      <div class="image-container">
+        <img src="Images/additional-media/KFC%20image/Value%20Menu/Regular%20Famous%20Bowl.png" alt="Regular Famous Bowl" />
+      </div>
+      <figcaption>
+        <h3>Regular Famous Bowl</h3>
+        <p>Price: $6,540</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </figcaption>
+    </figure>
+
+    <figure class="images">
+      <div class="image-container">
+        <img src="Images/additional-media/KFC%20image/Value%20Menu/Regular%20Famous%20Bowl%20Combo%20(1).png" alt="Regular Famous Bowl Combo" />
+      </div>
+      <figcaption>
+        <h3>Regular Famous Bowl Combo</h3>
+        <p>Price: $6,540</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </figcaption>
+    </figure>
+</div>
+
+<div class="slider">
+  <figure class="images">
+      <div class="image-container">
+        <img src="Images/additional-media/KFC%20image/Value%20Menu/Chicken%20Box%20Combo.png" alt="chicken Box Combo" />
+      </div>
+      <figcaption>
+        <h3>Chicken Box Combo</h3>
+        <p>Price: $6,540</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Value%20Menu/Chicken%20box.png" alt="chicken Box" />
+    </div>
+    <figcaption>
+      <h3>Chicken Box</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+</figure>
+
+<figure class="images">
+  <div class="image-container">
+    <img src="Images/additional-media/KFC%20image/Value%20Menu/Krunch%20BBQ%20sandwich%20combo.png" alt="krunch BBQ sandwich combo" />
+  </div>
+  <figcaption>
+    <h3>Krunch BBQ sandwich combo</h3>
+    <p>Price: $6,540</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </figcaption>
+</figure>
+
+
+<figure class="images">
+  <div class="image-container">
+    <img src="Images/additional-media/KFC%20image/Value%20Menu/Krunch%20spicy%20sandwich%20Combo.png" alt="Krunch spicy sandwich Combo" />
+  </div>
+  <figcaption>
+    <h3>Krunch spicy sandwich Combo</h3>
+    <p>Price: $6,540</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </figcaption>
+</figure>
+</div>
+
+<div class="slider">
+<figure class="images">
+  <div class="image-container">
+    <img src="Images/additional-media/KFC%20image/Value%20Menu/Small%20BBQ%20pocorn%20Chicken%20Combo.png" alt="Small BBQ pocorn Chicken Combo" />
+  </div>
+  <figcaption>
+    <h3>Small BBQ Popcorn Chicken Combo</h3>
+    <p>Price: $6,540</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </figcaption>
+</figure>
+
+
+<figure class="images">
+  <div class="image-container">
+    <img src="Images/additional-media/KFC%20image/Value%20Menu/Small%20popcaan%20Chicken%20combo.png" alt="Small popcaan Chicken combo" />
+  </div>
+  <figcaption>
+    <h3>Small pocorn Chicken Combo</h3>
+    <p>Price: $6,540</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </figcaption>
+</figure>
+
+
+<figure class="images">
+  <div class="image-container">
+    <img src="Images/additional-media/KFC%20image/Value%20Menu/Small%20spicy%20popcorn%20chicken%20combo.png" alt="Small spicy popcorn chicken combo" />
+  </div>
+  <figcaption>
+    <h3>Small spicy popcorn chicken combo</h3>
+    <p>Price: $6,540</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </figcaption>
+</figure>
+</div>
+
+<!--fifth menu-->
+<div class="KFC">
+  <h1>Zinger</h1>
+</div>
+<div><hr></div>
+
+<div class="slider">
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Zinger/Hot%20and%20Spicy%20Zinger%20Combo.png" alt="Hot and Spicy Zinger Combo" />
+    </div>
+    <figcaption>
+      <h3>Hot and Spicy Zinger Combo</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Zinger/Spicy%20Zinger%20Combo.png" alt="Spicy Zinger Combo" />
+    </div>
+    <figcaption>
+      <h3>Spicy Zinger Combo</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+</div>
+
+<!--Cartering menu -->
+<div class="KFC">
+  <h1>Cartering</h1>
+</div>
+
+<div class="slider">
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Catering/Catering%20Chicken.png" alt="Catering Chicken" />
+    </div>
+    <figcaption>
+      <h3>Catering Chicken</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+</div>
+
+<!--sixth menu Krispers-->
+<div class="KFC">
+  <h1>Krispers</h1>
+</div>
+<div><hr></div>
+
+<div class="slider">
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/KFC image/Krispers/3 pc krispers Combo.png" alt="3 pc krispers combo" />
+    </div>
+    <figcaption>
+      <h3>3 PC krispers Combo</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Krispers/5%20pc%20krispers%20combo.png" alt="5 pc krispers combo" />
+    </div>
+    <figcaption>
+      <h3>5 PC krispers Combo</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Krispers/10%20pc%20krispers.png" alt="10 pc krispers" />
+    </div>
+    <figcaption>
+      <h3>10 PC krispers</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+  
+</div>
+
+<!--sixth menu Krispers-->
+<div class="KFC">
+  <h1>Popcorn Chicken</h1>
+</div>
+<div><hr></div>
+
+<div class="slider">
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Popcorn%20chicken/BBq%20popcorn%20chicken%20combo.png" alt="BBq popcorn chicken combo" />
+    </div>
+    <figcaption>
+      <h3>BBQ popcorn chicken combo</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Popcorn%20chicken/BBQ%20popcorn%20chicken%20only.png" alt="BBQ popcorn chicken only" />
+    </div>
+    <figcaption>
+      <h3>BBQ Popcorn Chicken only</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Popcorn%20chicken/large%20spicy%20popcorn%20chicken%20combo.png" alt="large spicy popcorn chicken combo" />
+    </div>
+    <figcaption>
+      <h3>Large spicy Popcorn Chicken Combo</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+</div>
+<div class="slider">
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Popcorn%20chicken/large%20spicy%20popcorn%20chicken%20only.png" alt="large spicy popcorn chicken only" />
+    </div>
+    <figcaption>
+      <h3>Large spicy Popcorn Chicken</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Popcorn%20chicken/popcorn%20chicken%20combo.png" alt="popcorn chicken combo" />
+    </div>
+    <figcaption>
+      <h3>Popcorn Chicken Combo</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+
+  <figure class="images">
+    <div class="image-container">
+      <img src="Images/additional-media/KFC%20image/Popcorn%20chicken/popcorn%20chicken.png" alt="popcorn chicken" />
+    </div>
+    <figcaption>
+      <h3>Popcorn Chicken</h3>
+      <p>Price: $6,540</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="JS/ddownlist.js"></script>
+<script src="JS/cart.js"></script>
+</body>
+
+</html>
